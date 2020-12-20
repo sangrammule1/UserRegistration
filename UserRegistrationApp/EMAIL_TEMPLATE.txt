@@ -1,0 +1,6 @@
+Hi {FNAME} {LNAME},<br>
+	Welcome to amazon family,please click on hyperlink to unlock your account<br><br>
+	Teparary password: {Pwd}<br>
+	<a href="http://localhost:9898/unlockAcc?email={EMAIL}">Click here to unlock your account</a><br>
+	Thanks&Regard,<br>
+	Amazon Team

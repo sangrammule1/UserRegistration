@@ -1,0 +1,27 @@
+server:
+  port: 9898
+spring:
+  datasource:
+    url: jdbc:oracle:thin:@localhost:1521:xe
+    username: system
+    password: manager
+  mvc:
+    view:
+      prefix: /views/
+      suffix: .jsp
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: sangrammule1@gmail.com
+    password: sangram123
+    properties:
+      mail:
+        smtp:
+          starttls: 
+            enable: true
+          auth: true
+      
