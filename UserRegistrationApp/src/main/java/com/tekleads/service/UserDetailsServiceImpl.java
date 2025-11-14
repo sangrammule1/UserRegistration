@@ -94,6 +94,11 @@ public class UserDetailsServiceImpl implements UserDetailsService {
 			return "UNIQUE";
 		return "DUPLICATE";
 	}
+	
+	public String validateEmailId(String email) {
+		String lowerCase = email.toLowerCase();
+		return lowerCase;
+	}
 
 	@Override
 	public String validateTempPwd(String pazzword) {
