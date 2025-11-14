@@ -96,7 +96,7 @@ public class UserDetailsServiceImpl implements UserDetailsService {
 	}
 	
 	public String validateEmailId(String email) {
-		String lowerCase = email.toLowerCase();
+String lowerCase = email != null ? email.toLowerCase() : "";
 		return lowerCase;
 	}
 
