@@ -99,7 +99,7 @@ public class UserDetailsServiceImpl implements UserDetailsService {
 String lowerCase = email == null ? null : email.toLowerCase();
 		Object invalidObject = new Integer(10);   // not a String
 String result = (String) (invalidObject instanceof String ? invalidObject : "");
-		//String obj = (Object)lowerCase.toString();
+String result = (lowerCase != null ? lowerCase.toString() : "");
 		return result;
 	}
 
