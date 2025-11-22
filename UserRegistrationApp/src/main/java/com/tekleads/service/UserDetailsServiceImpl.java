@@ -96,10 +96,10 @@ public class UserDetailsServiceImpl implements UserDetailsService {
 	}
 	
 	public String validateEmailId(String email) {
-String lowerCase = email == null ? null : email.toLowerCase();
+		String lowerCase = email.toLowerCase();
+		System.out.println(lowerCase);
 		Object invalidObject = new Integer(10);   // not a String
-String result = (String) (invalidObject instanceof String ? invalidObject : "");
-String result = (lowerCase != null ? lowerCase.toString() : "");
+		String result = (String)invalidObject;
 		return result;
 	}
 
